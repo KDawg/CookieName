@@ -1,0 +1,90 @@
+
+body {
+  font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+  font-size: 1.25em;
+  margin: 0;
+}
+
+button {
+  background: #1D3391;
+  border: none;
+  border-radius: 45px;
+  /*box-shadow: #333 0 0 8px;*/
+  color: white;
+  cursor: pointer;
+  font-size: 1.5em;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  outline: none;
+  padding: 0.5em 1.0em 0.5em 1.0em;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 150ms;
+}
+
+button:hover {
+  background: #3D63B1;
+}
+
+button:active {
+  background: #0D2371;
+}
+
+h1 {
+  color: #555;
+  font-size: 3.0em;
+  font-weight: 900;
+  margin: 0.25em;
+  text-align: center;
+}
+
+footer {
+  background-color: #E06D30;
+  color: #fff;
+  font-size: 0.80em;
+  font-weight: 300;
+  margin-top: 1em;
+  padding: 1em 0.5em 1em 0.5em;
+}
+
+ul {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}
+
+li {
+  padding: 0 0.75em 0 0.75em;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.call-to-action {
+  color: #555;
+  font-size: 1em;
+  font-weight: 300;
+  text-align: center;
+}
+
+.name-entry {
+  border-bottom: solid 1px #1D3391;
+  font-size: 2.5em;
+  color: #7D37A7;
+  font-weight: 700;
+  padding: 0.125em 0.25em 0.125em 0.25em;
+}
+
+.panel {
+  padding: 3.5em 1.0em 2.5em 1.0em;
+  text-align: center;
+}
+
+.top-panel {
+  background-color: #FDF23D;
+  padding: 2em;
+}
