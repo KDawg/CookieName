@@ -63,6 +63,7 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
   list-style: none;
+  padding: 0;
 }
 
 li {
@@ -91,6 +92,12 @@ a:hover {
   color: #7D37A7;
   font-weight: 700;
   padding: 0.125em 0.25em 0.125em 0.25em;
+}
+
+@media screen and (max-width: 600px) {
+  .name-entry {
+    font-size: 1.75em;
+  }
 }
 
 .panel {
