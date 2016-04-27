@@ -6,7 +6,7 @@ body {
 }
 
 button {
-  background: #1D3391;
+  background: #63a23d;
   border: none;
   border-radius: 45px;
   color: white;
@@ -28,11 +28,11 @@ button {
 }
 
 button:hover {
-  background: #3D63B1;
+  background: #83c25d;
 }
 
 button:active {
-  background: #0D2371;
+  background: #53922d;
 }
 
 h1 {
@@ -89,7 +89,7 @@ a:hover {
 .name-entry {
   border-bottom: solid 1px #1D3391;
   font-size: 2.5em;
-  color: #7D37A7;
+  color: #63307d;
   font-weight: 700;
   padding: 0.125em 0.25em 0.125em 0.25em;
 }
@@ -124,7 +124,7 @@ a:hover {
 }
 
 .fig-newton-package {
-
+  border: solid 1px #555;
 }
 
 @media screen and (max-width: 600px) {

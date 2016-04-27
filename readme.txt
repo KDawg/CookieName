@@ -1,4 +1,10 @@
 
+Apr.20.16
+X Needs explain meta tag
+X Disclaimer on bottom "Not affiliated with Nabisco. Parody site."
+_ put up on HackerNews
+X new bag image
+
 Apr.17.16
 X favicon
 X Amazon link around image http://amzn.to/269Na4i

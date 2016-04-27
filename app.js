@@ -29,7 +29,16 @@ var FRUIT_NAMES = [
   'Papaya',
   'Lychee',
   'Rhubarb',
-  'Kumquat'
+  'Kumquat',
+  'Honeydew',
+  'Clementine',
+  'Gooseberry',
+  'Guava',
+  'Cranberry',
+  'Mulberry',
+  'Pumpkin',
+  'Plaintain',
+  'Boysenberry'
 ];
 
 var SCIENTIST_NAMES = [
@@ -58,7 +67,13 @@ var SCIENTIST_NAMES = [
   'Chomsky',
   'Oppenheimer',
   'Skinner',
-  'Archimedes'
+  'Archimedes',
+  'Turing',
+  'Goodall',
+  'Dawkins',
+  'Edison',
+  'Tesla',
+  'da Vinci'
 ];
 
 var fruitEl = document.getElementById('fruit-name');
