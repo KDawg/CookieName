@@ -11,7 +11,7 @@ button {
   border-radius: 45px;
   color: white;
   cursor: pointer;
-  font-size: 1.5em;
+  font-size: 2.0em;
   font-weight: 300;
   letter-spacing: 0.05em;
   outline: none;
@@ -57,6 +57,38 @@ footer {
   padding: 1em 0.5em 1em 0.5em;
 }
 
+@media screen and (max-width: 600px) {
+  footer {
+    padding: 0.75em;
+  }
+}
+
+p {
+  color: #555;
+  font-size: 1.25em;
+  font-weight: 300;
+  margin: 1em 0 1em 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 1em;
+    margin: 0.5em 0 0.5em 0;
+  }
+}
+
+section {
+  padding: 2.0em 1.0em 2.0em 1.0em;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  section {
+    padding: 0.75em;
+  }
+}
+
 ul {
   align-items: center;
   display: flex;
@@ -79,17 +111,10 @@ a:hover {
   text-decoration: underline;
 }
 
-.call-to-action {
-  color: #555;
-  font-size: 1em;
-  font-weight: 300;
-  text-align: center;
-}
-
 .name-entry {
   border-bottom: solid 1px #1D3391;
-  font-size: 2.5em;
   color: #63307d;
+  font-size: 3.0em;
   font-weight: 700;
   padding: 0.125em 0.25em 0.125em 0.25em;
 }
@@ -100,26 +125,33 @@ a:hover {
   }
 }
 
-.panel {
-  padding: 3.5em 1.0em 2.5em 1.0em;
-  text-align: center;
+.tweet-button {
+  font-size: 1.5em;
+  text-transform: none;
 }
 
 @media screen and (max-width: 600px) {
-  .panel {
-    padding: 1.25em;
+  .tweet-button {
+    font-size: 1em;
+    letter-spacing: 0;
   }
+}
+
+.exception {
+  font-size: 0.75em;
 }
 
 .explain-panel {
   background-color: #FDF23D;
-  padding: 2.0em;
-  text-align: center;
+}
+
+.name-panel {
+  padding: 2.5em 1.25em 2.5em 1.25em;
 }
 
 @media screen and (max-width: 600px) {
-  .explain-panel {
-    padding: 1.0em;
+  .name-panel {
+    padding: 1.5em 0.75em 1.5em 0.75em;
   }
 }
 
