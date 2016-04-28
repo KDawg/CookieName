@@ -1,0 +1,23 @@
+$hugeWidth: 1600px;
+$largeWidth: 1200px;
+$mediumWidth: 960px;
+$smallWidth: 450px;
+
+
+@mixin minScreen($res) {
+  @media screen and (min-width: $res) {
+    @content;
+  }
+}
+
+@mixin maxScreen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+@mixin betweenScreen($resMin, $resMax) {
+  @media screen and (min-width: $resMin) and (max-width: $resMax) {
+    @content;
+  }
+}
