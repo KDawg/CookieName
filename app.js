@@ -50,7 +50,6 @@ var SCIENTIST_NAMES = [
   'Freud',
   'Galilei',
   'Heisenberg',
-  'Vesalius',
   'Schrodinger',
   'Faraday',
   'Maxwell',
@@ -76,28 +75,39 @@ var SCIENTIST_NAMES = [
   'da Vinci'
 ];
 
-var fruitEl = document.getElementById('fruit-name');
-var scientistEl = document.getElementById('scientist-name');
+var fruitEl, scientistEl;
+var btnNameIt, btnTweetName;
+var cookieName;
 
-var btnNameIt = document.getElementById('new-name');
-btnNameIt.addEventListener('click', OnNameIt);
 
-var btnTweetName = document.getElementById('tweet-name');
-btnTweetName.addEventListener('click', OnTweetIt);
+Init();
 
-var cookieName = 'Fig Newtons';
+
+function Init() {
+  fruitEl = document.getElementById('fruit-name');
+  scientistEl = document.getElementById('scientist-name');
+
+  btnNameIt = document.getElementById('new-name');
+  btnNameIt.addEventListener('click', OnNameIt);
+
+  btnTweetName = document.getElementById('tweet-name');
+  btnTweetName.addEventListener('click', OnTweetIt);
+
+  cookieName = 'Fig Newtons';
+}
 
 
 function OnNameIt() {
   var fruit = GetFruitName();
   var scientist = GetScientistName();
 
-  cookieName = FormatCookieName(fruit, scientist);
   SetFruitName(fruit);
   SetScientistName(scientist);
+  cookieName = FormatCookieName(fruit, scientist);
 
   ga('send', 'event', 'Name', 'Generate');
 }
+
 
 function GetFruitName() {
   var name;
@@ -108,6 +118,7 @@ function GetFruitName() {
   return name;
 }
 
+
 function GetScientistName() {
   var name;
   var count = SCIENTIST_NAMES.length;
@@ -117,17 +128,21 @@ function GetScientistName() {
   return name;
 }
 
+
 function FormatCookieName(fruit, scientist) {
   return fruit + ' ' + scientist + 's';
 }
+
 
 function SetFruitName(fruit) {
   fruitEl.innerText = fruit;
 }
 
+
 function SetScientistName(scientist) {
   scientistEl.innerText = scientist + 's';
 }
+
 
 function OnTweetIt() {
   var url = 'https://twitter.com/share?url=http://www.cookiename.com&amp;text=My cookie name is ' + cookieName + '. Get yours now! Free and fun!';
@@ -135,5 +150,3 @@ function OnTweetIt() {
   window.open(url,'_blank');
   ga('send', 'event', 'Name', 'Tweet');
 }
-
-
