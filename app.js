@@ -145,7 +145,14 @@ function SetScientistName(scientist) {
 
 
 function OnTweetIt() {
-  var url = 'https://twitter.com/share?url=http://www.cookiename.com&amp;text=My cookie name is ' + cookieName + '. Get yours now! Free and fun!';
+  // cookie emoji
+  // SEE: http://www.iemoji.com/view/emoji/614/objects/cookie
+  //   U+1F36A
+  // SEE: http://www.2ality.com/2013/09/javascript-unicode.html
+  //   toUTF16(0x1F36A)
+  // SEE: https://dev.twitter.com/web/tweet-button/web-intent
+
+  var url = 'https://twitter.com/intent/tweet?text=My cookie \uD83C\uDF6A  name is "' + cookieName + '". Get yours now! Free and fun! http://www.cookiename.com&url=www.cookiename.com&hashtags=cookie,funny';
 
   window.open(url,'_blank');
   ga('send', 'event', 'Name', 'Tweet');
